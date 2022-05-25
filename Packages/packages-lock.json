@@ -1,5 +1,81 @@
 {
   "dependencies": {
+    "com.inceptionxr.assetsupplier": {
+      "version": "1.0.2-preview.24.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.inceptionxr.asyncoroutine": "1.0.2-preview.6.0",
+        "com.inceptionxr.generalutils": "1.0.1-preview.13.0",
+        "com.inceptionxr.network": "1.2.1-preview.116.0"
+      },
+      "url": "https://registry.inceptionxr.com"
+    },
+    "com.inceptionxr.asyncoroutine": {
+      "version": "1.0.2-preview.6.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.unitywebrequestwww": "1.0.0"
+      },
+      "url": "https://registry.inceptionxr.com"
+    },
+    "com.inceptionxr.dotnetenv": {
+      "version": "1.0.1-preview.1.0",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.inceptionxr.com"
+    },
+    "com.inceptionxr.generalutils": {
+      "version": "1.0.1-preview.68.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.inceptionxr.asyncoroutine": "1.0.2-preview.6.0",
+        "com.inceptionxr.dotnetenv": "1.0.1-preview.1.0",
+        "com.unity.modules.audio": "1.0.0"
+      },
+      "url": "https://registry.inceptionxr.com"
+    },
+    "com.inceptionxr.jsondotnet": {
+      "version": "1.0.1-preview.9.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.inceptionxr.generalutils": "1.0.1-preview.59.0",
+        "com.unity.nuget.newtonsoft-json": "2.0.0-preview"
+      },
+      "url": "https://registry.inceptionxr.com"
+    },
+    "com.inceptionxr.localstorage": {
+      "version": "1.0.1-preview.17.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.inceptionxr.generalutils": "1.0.1-preview.64.0"
+      },
+      "url": "https://registry.inceptionxr.com"
+    },
+    "com.inceptionxr.network": {
+      "version": "1.2.1-preview.122.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.inceptionxr.asyncoroutine": "1.0.2-preview.6.0",
+        "com.inceptionxr.generalutils": "1.0.1-preview.68.0",
+        "com.inceptionxr.jsondotnet": "1.0.1-preview.9.0",
+        "com.inceptionxr.localstorage": "1.0.1-preview.17.0",
+        "com.unity.modules.unitywebrequesttexture": "1.0.0"
+      },
+      "url": "https://registry.inceptionxr.com"
+    },
+    "com.unity.2d.sprite": {
+      "version": "1.0.0",
+      "depth": 1,
+      "source": "builtin",
+      "dependencies": {}
+    },
     "com.unity.ar-companion-core": {
       "version": "1.0.1-preview.2",
       "depth": 0,
@@ -31,10 +107,13 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.collab-proxy": {
-      "version": "1.11.2",
+      "version": "1.13.5",
       "depth": 0,
       "source": "registry",
-      "dependencies": {},
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "2.0.0",
+        "com.unity.services.core": "1.0.1"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.collections": {
@@ -163,8 +242,8 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.nuget.newtonsoft-json": {
-      "version": "2.0.0-preview",
-      "depth": 3,
+      "version": "2.0.0",
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -200,6 +279,15 @@
         "com.unity.jobs": "0.2.9-preview.15",
         "com.unity.properties": "1.4.3-preview",
         "com.unity.test-framework.performance": "2.0.8-preview"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.services.core": {
+      "version": "1.0.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.unitywebrequest": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
@@ -269,6 +357,16 @@
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0"
       }
+    },
+    "com.unity.vectorgraphics": {
+      "version": "2.0.0-preview.14",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.2d.sprite": "1.0.0",
+        "com.unity.ugui": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
     },
     "com.unity.xr-content.mars-sim-environments": {
       "version": "file:../ContentPackages/com.unity.xr-content.mars-sim-environments.tgz",
