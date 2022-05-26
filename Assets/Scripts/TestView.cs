@@ -3,6 +3,7 @@ using NetworkFramework;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
@@ -82,6 +83,32 @@ public class TestView : MonoBehaviour
 
         // download prefab
         FilterPrefab = assetBundle.LoadAsset<UnityEngine.GameObject>(PrefabAssetName);
+
+        if (FilterPrefab == null)
+        {
+            Errors.Add($"Filter Prefab has been not found in AssetBundle {AssetBundleName} by name {PrefabAssetName}");
+
+            // list what we have in asset bundle
+            var assetNames = assetBundle.GetAllAssetNames();
+            if (assetNames == null)
+            {
+                Errors.Add($"No assets found in AssetBundle {AssetBundleName}");
+            }
+            else
+            {
+                for (int i = 0; i < assetNames.Length; i++)
+                {
+                    var assetName = assetNames[i];
+                    var asset = assetBundle.LoadAsset(assetName);
+                    var assetTypeName = "NULL";
+                    if (asset != null)
+                    {
+                        assetTypeName = asset.GetType().Name;
+                    }
+                    Errors.Add($"Found Asset {assetName} ({assetTypeName})");
+                }
+            }
+        }
         //FilterPrefab = await _assetBundleCache.GetAssetFromBundle<GameObject>(AssetBundleName, PrefabAssetName);
     }
 
