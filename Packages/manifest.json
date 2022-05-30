@@ -16,9 +16,12 @@
     }
   ],
   "dependencies": {
-    "com.unity.vectorgraphics" : "2.0.0-preview.14",
+    "com.inceptionxr.arfacefilters": "1.0.1-preview.23.0",
     "com.inceptionxr.assetsupplier": "1.0.2-preview.24.0",
+    "com.inceptionxr.generalutils": "https://91263ee88240e90ccf91871573ba127fab2fa66b@github.com/InceptionXR/GeneralUtils.git?path=/Assets#master-rc",
+    "com.inceptionxr.inceptionplugins": "https://91263ee88240e90ccf91871573ba127fab2fa66b@github.com/InceptionXR/InceptionPlugins.git?path=/Assets#master-rc",
     "com.inceptionxr.network": "1.2.1-preview.122.0",
+    "com.inceptionxr.phoenixservices": "1.2.1-preview.139.0",
     "com.unity.ar-companion-core": "1.0.1-preview.2",
     "com.unity.collab-proxy": "1.13.5",
     "com.unity.content-manager": "0.1.6-preview",
@@ -32,6 +35,7 @@
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.4.8",
     "com.unity.ugui": "1.0.0",
+    "com.unity.vectorgraphics": "2.0.0-preview.14",
     "com.unity.xr-content.mars-sim-environments": "file:../ContentPackages/com.unity.xr-content.mars-sim-environments.tgz",
     "com.unity.xr-content.template-mars-basic": "file:../ContentPackages/com.unity.xr-content.template-mars-basic.tgz",
     "com.unity.xr.arfoundation": "4.1.10",
