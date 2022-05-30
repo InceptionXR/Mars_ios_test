@@ -1,13 +1,12 @@
 {
   "dependencies": {
     "com.inceptionxr.arfacefilters": {
-      "version": "1.0.1-preview.23.0",
+      "version": "1.0.1-preview.13.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.xr.arkit-face-tracking": "4.1.7",
-        "com.inceptionxr.unitymars": "1.0.1-preview.5.0",
-        "com.inceptionxr.generalutils": "1.0.1-preview.67.0"
+        "com.inceptionxr.unitymars": "1.0.1-preview.5.0"
       },
       "url": "https://registry.inceptionxr.com"
     },

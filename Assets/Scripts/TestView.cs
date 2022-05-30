@@ -20,6 +20,9 @@ public class TestView : MonoBehaviour
     [Tooltip("Filter Prefab will be instantiated under this Transform")]
     public Transform FilterRoot;
 
+    [Tooltip("If true, Enables instantiated GameObject")]
+    public bool IsEnableAfterInstantiatePrefab;
+
     private GameObject _filterInstance;
 
     private GUIStyle _errorsStyle;
@@ -53,6 +56,11 @@ public class TestView : MonoBehaviour
         if (FilterPrefab != null)
         {
             _filterInstance = Instantiate(FilterPrefab, FilterRoot);
+
+            if (_filterInstance != null && IsEnableAfterInstantiatePrefab)
+            {
+                _filterInstance.SetActive(true);
+            }
         }
         else
         {

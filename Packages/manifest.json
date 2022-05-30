@@ -16,7 +16,7 @@
     }
   ],
   "dependencies": {
-    "com.inceptionxr.arfacefilters": "1.0.1-preview.23.0",
+    "com.inceptionxr.arfacefilters": "1.0.1-preview.13.0",
     "com.inceptionxr.assetsupplier": "1.0.2-preview.24.0",
     "com.inceptionxr.generalutils": "https://91263ee88240e90ccf91871573ba127fab2fa66b@github.com/InceptionXR/GeneralUtils.git?path=/Assets#master-rc",
     "com.inceptionxr.inceptionplugins": "https://91263ee88240e90ccf91871573ba127fab2fa66b@github.com/InceptionXR/InceptionPlugins.git?path=/Assets#master-rc",
