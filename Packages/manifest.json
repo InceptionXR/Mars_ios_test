@@ -18,8 +18,8 @@
   "dependencies": {
     "com.inceptionxr.arfacefilters": "1.0.1-preview.13.0",
     "com.inceptionxr.assetsupplier": "1.0.2-preview.24.0",
-    "com.inceptionxr.generalutils": "https://91263ee88240e90ccf91871573ba127fab2fa66b@github.com/InceptionXR/GeneralUtils.git?path=/Assets#master-rc",
-    "com.inceptionxr.inceptionplugins": "https://91263ee88240e90ccf91871573ba127fab2fa66b@github.com/InceptionXR/InceptionPlugins.git?path=/Assets#master-rc",
+    "com.inceptionxr.generalutils": "1.0.1-preview.65.0",
+    "com.inceptionxr.inceptionplugins": "2.0.1-preview.31.0",
     "com.inceptionxr.network": "1.2.1-preview.122.0",
     "com.inceptionxr.phoenixservices": "1.2.1-preview.139.0",
     "com.unity.ar-companion-core": "1.0.1-preview.2",

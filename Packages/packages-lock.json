@@ -38,26 +38,26 @@
       "url": "https://registry.inceptionxr.com"
     },
     "com.inceptionxr.generalutils": {
-      "version": "https://91263ee88240e90ccf91871573ba127fab2fa66b@github.com/InceptionXR/GeneralUtils.git?path=/Assets#master-rc",
-      "depth": 0,
-      "source": "git",
+      "version": "1.0.1-preview.68.0",
+      "depth": 1,
+      "source": "registry",
       "dependencies": {
         "com.inceptionxr.asyncoroutine": "1.0.2-preview.6.0",
         "com.inceptionxr.dotnetenv": "1.0.1-preview.1.0",
         "com.unity.modules.audio": "1.0.0"
       },
-      "hash": "ac98bd2436c5f66c66ef8867a667691fc6e39754"
+      "url": "https://registry.inceptionxr.com"
     },
     "com.inceptionxr.inceptionplugins": {
-      "version": "https://91263ee88240e90ccf91871573ba127fab2fa66b@github.com/InceptionXR/InceptionPlugins.git?path=/Assets#master-rc",
-      "depth": 0,
-      "source": "git",
+      "version": "2.0.1-preview.32.0",
+      "depth": 1,
+      "source": "registry",
       "dependencies": {
         "com.inceptionxr.generalutils": "1.0.1-preview.56.0",
         "com.inceptionxr.tmpessentials": "1.0.1-preview.2.0",
         "com.unity.textmeshpro": "2.0.1"
       },
-      "hash": "2229d0dbb698aecaac8f1982468072bda3f71040"
+      "url": "https://registry.inceptionxr.com"
     },
     "com.inceptionxr.jsondotnet": {
       "version": "1.0.1-preview.9.0",
