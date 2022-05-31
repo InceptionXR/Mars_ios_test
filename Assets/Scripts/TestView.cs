@@ -26,6 +26,10 @@ public class TestView : MonoBehaviour
     [Tooltip("If true, Enables instantiated GameObject")]
     public bool IsEnableAfterInstantiatePrefab;
 
+    public Vector3 InitialFilterPosition = Vector3.zero;
+    public Quaternion InitialFilterRotation = Quaternion.identity;
+    public Vector3 InitialFilterScale = Vector3.one;
+
     private GameObject _filterInstance;
 
     private GUIStyle _errorsStyle;
@@ -60,9 +64,16 @@ public class TestView : MonoBehaviour
         {
             _filterInstance = Instantiate(FilterPrefab, FilterRoot);
 
-            if (_filterInstance != null && IsEnableAfterInstantiatePrefab)
+            if (_filterInstance != null)
             {
-                _filterInstance.SetActive(true);
+                _filterInstance.transform.position = InitialFilterPosition;
+                _filterInstance.transform.rotation = InitialFilterRotation;
+                _filterInstance.transform.localScale = InitialFilterScale;
+
+                if (IsEnableAfterInstantiatePrefab)
+                {
+                    _filterInstance.SetActive(true);
+                }
             }
         }
         else
