@@ -15,6 +15,9 @@ public class TestView : MonoBehaviour
 
     public List<string> Errors;
 
+    [Tooltip("If true, will load AssetBundle from StreamingAssets, not from CDN")]
+    public bool IsLoadFromStreamingAssets;
+
     public GameObject FilterPrefab;
 
     [Tooltip("Filter Prefab will be instantiated under this Transform")]
@@ -82,7 +85,20 @@ public class TestView : MonoBehaviour
             return;
         }
 
-        var assetBundle = await NetworkAssets.GetAssetBundle(AssetBundleName).GetAsset();
+        AssetBundle assetBundle;
+        if (IsLoadFromStreamingAssets)
+        {
+            var assetBundleName = $"{Application.streamingAssetsPath}/{AssetBundleName}";
+            assetBundle = AssetBundle.LoadFromFile(assetBundleName);
+            Errors.Add($"Loaded AssetBundle from path {assetBundleName}: {assetBundle}");
+        }
+        else
+        {
+            assetBundle = await NetworkAssets.GetAssetBundle(AssetBundleName).GetAsset();
+            Errors.Add($"Loaded AssetBundle from CDN with name {AssetBundleName}: {assetBundle}");
+        }
+
+        // validate asset bundle
         if (assetBundle == null)
         {
             Errors.Add("No AssetBundle downloaded!");
