@@ -1,12 +1,13 @@
 {
   "dependencies": {
     "com.inceptionxr.arfacefilters": {
-      "version": "1.0.1-preview.13.0",
+      "version": "1.0.1-preview.27.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.xr.arkit-face-tracking": "4.1.7",
-        "com.inceptionxr.unitymars": "1.0.1-preview.5.0"
+        "com.inceptionxr.unitymars": "1.0.1-preview.5.0",
+        "com.inceptionxr.generalutils": "1.0.1-preview.67.0"
       },
       "url": "https://registry.inceptionxr.com"
     },
@@ -121,8 +122,8 @@
       "url": "https://registry.inceptionxr.com"
     },
     "com.inceptionxr.unitymars": {
-      "version": "1.0.1-preview.5.0",
-      "depth": 1,
+      "version": "1.0.1-preview.6.0",
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.xr.arfoundation": "4.1.7",
@@ -141,6 +142,20 @@
       "depth": 1,
       "source": "builtin",
       "dependencies": {}
+    },
+    "com.unity.addressables": {
+      "version": "1.18.19",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.scriptablebuildpipeline": "1.19.2",
+        "com.unity.modules.assetbundle": "1.0.0",
+        "com.unity.modules.imageconversion": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.modules.unitywebrequestassetbundle": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
     },
     "com.unity.ar-companion-core": {
       "version": "1.0.1-preview.2",
@@ -298,6 +313,13 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.mobile.android-logcat": {
+      "version": "1.2.3",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.nuget.mono-cecil": {
       "version": "0.1.6-preview.2",
       "depth": 2,
@@ -333,6 +355,13 @@
         "com.unity.serialization": "1.5.0-preview",
         "com.unity.xrtools.utils": "1.1.1"
       },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.scriptablebuildpipeline": {
+      "version": "1.19.2",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.serialization": {
@@ -447,13 +476,14 @@
       "dependencies": {}
     },
     "com.unity.xr.arcore": {
-      "version": "4.1.7",
-      "depth": 2,
+      "version": "4.1.10",
+      "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.xr.arsubsystems": "4.1.7",
+        "com.unity.xr.arsubsystems": "4.1.10",
         "com.unity.xr.management": "4.0.1",
-        "com.unity.modules.androidjni": "1.0.0"
+        "com.unity.modules.androidjni": "1.0.0",
+        "com.unity.modules.unitywebrequest": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },

@@ -38,7 +38,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869835131590039297}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c53f34526f554a499902e21c209006c, type: 3}
   m_Name: 
@@ -46,5 +46,10 @@ MonoBehaviour:
   AssetBundleName: https://cdn.bookful.inceptionxr.com/achievement/UN2k3dOfE/images/root_arf_bathead_the13thstreet
   PrefabAssetName: assets/prefabs/arfs_roots/arfs_book_13th street/root_arf_bathead_the13thstreet.prefab
   Errors: []
+  IsLoadFromStreamingAssets: 0
   FilterPrefab: {fileID: 0}
   FilterRoot: {fileID: 0}
+  IsEnableAfterInstantiatePrefab: 0
+  InitialFilterPosition: {x: 0, y: 0, z: 0}
+  InitialFilterRotation: {x: 0, y: 0, z: 0, w: 1}
+  InitialFilterScale: {x: 1, y: 1, z: 1}

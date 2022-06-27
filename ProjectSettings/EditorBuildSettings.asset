@@ -8,7 +8,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Content/Scenes/MarsTestScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Content/Scenes/MARS Session Scene.unity
+    guid: 0a5e4c6c3c22aa147a45f1da1d180121
+  - enabled: 1
+    path: Assets/Content/Scenes/No MARS Session Scene.unity
+    guid: bae862d172f52f54babc7157df7519fe
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 94341010e2c74c44fb4e9acf274c3d47, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: fce694af82985451ca510006f08638ae, type: 2}
     com.unity.mars-ar-foundation-providers.xr_subsystem_settings: {fileID: 11400000, guid: 07d704462fc65408c8f841694bc62b2a, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b38fcf3c254374e7d901d353e1e5af8f, type: 2}
