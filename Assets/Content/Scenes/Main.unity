@@ -130,6 +130,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5275929833630970708, guid: 2593813765771ba46b8af685f12d0788, type: 3}
+      propertyPath: FilterNames.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5275929833630970708, guid: 2593813765771ba46b8af685f12d0788, type: 3}
+      propertyPath: FilterNames.Array.data[4]
+      value: ARFilter_Bat
+      objectReference: {fileID: 0}
     - target: {fileID: 5275929833630970710, guid: 2593813765771ba46b8af685f12d0788, type: 3}
       propertyPath: m_Name
       value: Application Controller

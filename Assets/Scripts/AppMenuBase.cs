@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace Assets.Scripts
 {
@@ -16,6 +17,59 @@ namespace Assets.Scripts
                 }
 
                 return _appController;
+            }
+        }
+
+        public MenuButtonView ButtonPrefab;
+
+        public List<string> FiltersToLoad;
+
+        public List<MenuButtonView> Buttons;
+
+        public Transform ButtonsRoot;
+
+        private void Awake()
+        {
+            InitButtons();
+        }
+
+        private void InitButtons()
+        {
+            if (FiltersToLoad == null)
+            {
+                return;
+            }
+
+            for (int fIndex = 0; fIndex < FiltersToLoad.Count; fIndex++)
+            {
+                var filter = FiltersToLoad[fIndex];
+
+                var buttonInstance = CreateButtonInstance(filter);
+                Buttons ??= new List<MenuButtonView>();
+                Buttons.Add(buttonInstance);
+            }
+        }
+
+        private MenuButtonView CreateButtonInstance(string filterName)
+        {
+            if (ButtonPrefab == null)
+            {
+                return default;
+            }
+
+            var button = Instantiate(ButtonPrefab, ButtonsRoot);
+            button.OnClicked?.AddListener(OnFilterButtonClicked);
+            button.Title = filterName;
+
+            return button;
+        }
+
+        protected virtual void OnFilterButtonClicked(MenuButtonView sender)
+        {
+            if (sender != null)
+            {
+                var filterIndex = FiltersToLoad != null ? FiltersToLoad.IndexOf(sender.Title) : 0;
+                LoadFilter(filterIndex);
             }
         }
 
