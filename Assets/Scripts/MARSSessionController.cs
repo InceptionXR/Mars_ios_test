@@ -5,12 +5,14 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-    public class MARSSessionController : MonoBehaviour, IUsesCameraTexture
+    public class MARSSessionController : MonoBehaviour, IUsesCameraTexture, IUsesFunctionalityInjection
     {
+        public IProvidesFunctionalityInjection provider { get; set; }
         IProvidesCameraTexture IFunctionalitySubscriber<IProvidesCameraTexture>.provider { get; set; }
 
-        private void Awake()
+        private void OnEnable()
         {
+            this.EnsureFunctionalityInjected();
             this.RequestCameraFacingDirection(CameraFacingDirection.User);
         }
     }
